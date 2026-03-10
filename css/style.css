@@ -1523,7 +1523,17 @@ ul {
   .cta-title span,
   .section-title span,
   .hero-content h2 span {
+    display: inline;
     white-space: normal;
+    word-break: auto-phrase;
+    /* Better Japanese typography, falls back gracefully */
+  }
+
+  /* 画面が小さいときは意図的な改行を無効にし、自然に折り返すように変更 */
+  .cta-title br,
+  .section-title br,
+  .hero-content h2 br {
+    display: none;
   }
 
   .footer-inner {
