@@ -19,6 +19,7 @@
     href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;700;800&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -28,10 +29,9 @@
   <header class="site-header reveal-header">
     <div class="container header-inner">
       <div class="brand">
-        <span class="brand-mark"><i class="fa-solid fa-shield-halved"></i></span>
         <div>
-          <p class="brand-sub">完全自社施工・地域最安値クラス</p>
-          <h1 class="brand-title">窓フィルムプロフェッショナルズ</h1>
+          <p class="brand-sub">完全自社施工・他社に負けない低価格！</p>
+          <h1 class="brand-title">株式会社エムテック</h1>
         </div>
       </div>
       <a class="btn btn-primary btn-sm header-cta" href="#line-estimate">無料見積もり</a>
@@ -44,16 +44,21 @@
       <div class="hero-overlay"></div>
       <div class="container hero-container">
         <div class="hero-content reveal-on-scroll">
-          <p class="eyebrow">PREMIUM WINDOW FILM SERVICE</p>
-          <h2>窓が変われば、<span>暮らしの質</span>が変わる。</h2>
-          <p class="hero-lead">西日の暑さ、外からの視線、毎朝の結露…<br>そのお悩み、地域最安値の『完全コミコミ料金』で確実に解決します。</p>
+          <h2>窓が変われば、<br>暮らしの質が変わる。</h2>
+          <p class="hero-lead">西日の暑さ、外からの視線、毎朝の結露…<br>そのお悩み、お任せください。窓フィルムで全部解決！</p>
+          <div class="hero-badges">
+            <div class="hero-badge"><i class="fa-solid fa-calculator"></i> 見積もり無料</div>
+            <div class="hero-badge"><i class="fa-solid fa-layer-group"></i> 複数枚がお得</div>
+            <div class="hero-badge"><i class="fa-solid fa-truck-fast"></i> 最短翌日OK</div>
+          </div>
           <div class="hero-points">
-            <span><i class="fa-solid fa-check"></i> 出張費・養生・家具移動【すべて0円】</span>
-            <span><i class="fa-solid fa-check"></i> スマホ写真で最短5分【見積もり完結】</span>
-            <span><i class="fa-solid fa-check"></i> 国家資格保有の職人による【完全自社施工】</span>
+            <span><i class="fa-solid fa-check"></i> 他社に負けない低価格！</span>
+            <span><i class="fa-solid fa-check"></i> 関西を中心に広範囲対応！</span>
+            <span><i class="fa-solid fa-check"></i> 西宮から半径70km圏内は出張費無料！</span>
           </div>
           <div class="hero-actions">
-            <a class="btn btn-primary btn-lg" href="#line-estimate"><i class="fab fa-line"></i> LINEで無料5分見積もり</a>
+            <a class="btn btn-primary btn-lg" href="https://line.me/R/ti/p/@287hfqga"><i class="fab fa-line"></i>
+              LINEで無料5分見積もり</a>
             <p class="hero-note">訪問見積もり不要・匿名でのご相談も大歓迎です</p>
           </div>
         </div>
@@ -62,43 +67,60 @@
 
     <!-- 悩みセクション -->
     <section id="pain-points" class="section section-offset">
+      <div class="container container-narrow">
+        <div class="section-heading center reveal-on-scroll">
+          <p class="section-label">THE PROBLEMS</p>
+          <h2 class="section-title">毎日感じる「小さな不満」、<br>放置していませんか？</h2>
+        </div>
+      </div>
       <div class="container pain-grid">
         <div class="pain-visual-wrap reveal-on-scroll">
-          <div class="image-card">
-            <img src="img/pain_sun.png" alt="日差しの強い窓辺" class="rounded-image" loading="lazy">
-            <div class="glass-badge"><i class="fa-solid fa-temperature-arrow-up"></i> 猛烈な西日</div>
-            <div class="glass-badge badge-second"><i class="fa-solid fa-eye-low-vision"></i> 外からの視線</div>
+          <div class="pain-visual-inner">
+            <div class="image-card">
+              <img src="img/pain_illustration.png" alt="窓の暑さや視線に困っているイラスト" class="rounded-image" loading="lazy">
+              <div class="glass-badge"><i class="fa-solid fa-temperature-arrow-up"></i> 猛烈な西日</div>
+              <div class="glass-badge badge-second"><i class="fa-solid fa-eye-low-vision"></i> 外からの視線</div>
+            </div>
           </div>
         </div>
         <div class="pain-content reveal-on-scroll">
-          <p class="section-label">THE PROBLEMS</p>
-          <h2 class="section-title">毎日感じる「小さな不満」、<br>放置していませんか？</h2>
           <ul class="pain-list">
-            <li>
+            <li data-num="01">
               <div class="icon-wrap"><i class="fa-solid fa-xmark"></i></div>
-              <div>
-                <strong>夏の圧倒的な暑さとエアコン効率の悪さ</strong>
-                <p>強い西日が差し込み、エアコンを強風にしても一向に涼しくならない。</p>
+              <div class="card-text">
+                <strong>夏のジリジリする「猛暑」</strong>
+                <p>窓際の不快な熱をカット。エアコン効率を改善し、電気代の抑制にも直結します。</p>
               </div>
             </li>
-            <li>
+            <li data-num="02">
               <div class="icon-wrap"><i class="fa-solid fa-xmark"></i></div>
-              <div>
-                <strong>外からの視線が気になりカーテンが開けられない</strong>
-                <p>せっかくの大きな窓なのに、道路や隣家を気にして常に閉めっぱなし。</p>
+              <div class="card-text">
+                <strong>外から室内への「視線」</strong>
+                <p>明るさはそのままにプライバシーを確保。一日中カーテンを開けて過ごせます。</p>
               </div>
             </li>
-            <li>
+            <li data-num="03">
               <div class="icon-wrap"><i class="fa-solid fa-xmark"></i></div>
-              <div>
-                <strong>空き巣被害の不安や台風でのガラス飛散リスク</strong>
-                <p>1階の窓の防犯性や、強風時の割れなど、万一の事態が心配。</p>
+              <div class="card-text">
+                <strong>災害時の「ガラス飛散」</strong>
+                <p>台風や地震による窓割れから家族を守り、同時に防犯性能も向上させます。</p>
               </div>
             </li>
           </ul>
-          <div class="solution-box dark-theme">
-            <h3><i class="fa-solid fa-circle-check"></i> 窓フィルム1枚で、すべて同時に解決します。</h3>
-            <p>大規模な窓交換リフォームは不要。今のガラスのまま、遮熱・目隠し・防犯・防災機能を瞬時に付与できます。</p>
+        </div>
+
+        <div class="solution-box reveal-on-scroll">
+          <div class="solution-inner">
+            <div class="solution-icon">
+              <img src="img/solution_icon.png" alt="窓フィルム解決アイコン" class="solution-symbol">
+            </div>
+            <div class="solution-text">
+              <h3>窓フィルムなら、1日で解決。</h3>
+              <p>今のガラスに貼るだけで、暮らしの悩みをその日のうちに解消します。</p>
+            </div>
+            <div class="solution-action">
+              <a href="#line-estimate" class="btn btn-primary">無料見積もりを試す</a>
+            </div>
           </div>
         </div>
       </div>
@@ -114,32 +136,86 @@
         </div>
 
         <div class="case-grid">
-          <article class="case-card reveal-on-scroll">
+          <article class="case-card reveal-on-scroll" data-index="0">
             <div class="case-image-wrap">
               <img src="img/case1.png" alt="遮熱・UVカットフィルムの施工事例" loading="lazy">
               <span class="case-tag">遮熱・UVカット</span>
             </div>
             <div class="case-content">
-              <h3>リビングの西日対策（ミラー調フィルム）</h3>
-              <p class="case-desc">「西日が強すぎてリビングに居られない」というお悩みに対し、景観を損なわない薄めのハーフミラーフィルムを施工。室温上昇を大幅に抑えつつ、外からの視線もカットしています。
-              </p>
-              <div class="case-voice">
-                <i class="fa-solid fa-quote-left"></i> エアコンの効きが劇的に変わり、電気代も安くなりました！
+              <h3>リビングの西日対策（ミラー調）</h3>
+              <p class="case-desc">「西日が強すぎてリビングに居られない」というお悩みに対し、景観を損なわない薄めのハーフミラーフィルムを施工。室温上昇を大幅に抑止。</p>
+              <div class="case-action">
+                <span class="btn btn-sm btn-outline"><i class="fa-solid fa-magnifying-glass"></i> 詳細・価格を見る</span>
               </div>
             </div>
           </article>
 
-          <article class="case-card reveal-on-scroll">
+          <article class="case-card reveal-on-scroll" data-index="1">
             <div class="case-image-wrap">
               <img src="img/case2.png" alt="目隠し・プライバシーフィルムの施工事例" loading="lazy">
               <span class="case-tag">目隠し・防犯</span>
             </div>
             <div class="case-content">
-              <h3>道路沿い窓のプライバシー確保（フロスト調）</h3>
-              <p class="case-desc">
-                歩行者の視線が気になる１階の窓。光を通しながら視線を完全に遮るフロスト（すりガラス調）フィルムを施工。自然光を部屋に取り込みながら、ブラインドなしでも安心して過ごせる空間に。</p>
-              <div class="case-voice">
-                <i class="fa-solid fa-quote-left"></i> カーテンを開けっ放しにできるようになり、部屋が明るくなりました。
+              <h3>道路沿い窓のプライバシー強化</h3>
+              <p class="case-desc">歩行者の視線が気になる１階の窓。光を通しながら視線を完全に遮るフロスト（すりガラス調）フィルムを施工し安心空間に。</p>
+              <div class="case-action">
+                <span class="btn btn-sm btn-outline"><i class="fa-solid fa-magnifying-glass"></i> 詳細・価格を見る</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="case-card reveal-on-scroll" data-index="2">
+            <div class="case-image-wrap">
+              <img src="img/case1.png" alt="遮熱・UVカットフィルムの施工事例" loading="lazy">
+              <span class="case-tag">遮熱</span>
+            </div>
+            <div class="case-content">
+              <h3>吹き抜け窓の暑さ・UV対策</h3>
+              <p class="case-desc">高所にある吹き抜け窓からの直射日光による床焼けと暑さを解決。透明度の高い遮熱フィルムで開放感を保ちながら熱をカット。</p>
+              <div class="case-action">
+                <span class="btn btn-sm btn-outline"><i class="fa-solid fa-magnifying-glass"></i> 詳細・価格を見る</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="case-card reveal-on-scroll" data-index="3">
+            <div class="case-image-wrap">
+              <img src="img/case2.png" alt="防犯対策フィルムの施工事例" loading="lazy">
+              <span class="case-tag">防犯・防災</span>
+            </div>
+            <div class="case-content">
+              <h3>1階裏手窓の防犯強化</h3>
+              <p class="case-desc">死角になりやすい裏手の窓に防犯フィルムを施工。ガラス破りを困難にし、空き巣の侵入リスクを大幅に低減。台風時も安心。</p>
+              <div class="case-action">
+                <span class="btn btn-sm btn-outline"><i class="fa-solid fa-magnifying-glass"></i> 詳細・価格を見る</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="case-card reveal-on-scroll" data-index="4">
+            <div class="case-image-wrap">
+              <img src="img/case1.png" alt="目隠し・デザインフィルムの施工事例" loading="lazy">
+              <span class="case-tag">目隠し</span>
+            </div>
+            <div class="case-content">
+              <h3>浴室・脱衣所のシルエット対策</h3>
+              <p class="case-desc">夜間、照明をつけると外からシルエットが見えてしまう浴室窓に、完全目隠しの乳白色フィルムを施工。水回り専用施工。</p>
+              <div class="case-action">
+                <span class="btn btn-sm btn-outline"><i class="fa-solid fa-magnifying-glass"></i> 詳細・価格を見る</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="case-card reveal-on-scroll" data-index="5">
+            <div class="case-image-wrap">
+              <img src="img/case2.png" alt="西日対策フィルムの施工事例" loading="lazy">
+              <span class="case-tag">遮熱・UVカット</span>
+            </div>
+            <div class="case-content">
+              <h3>マンション高層階のジリジリ感対策</h3>
+              <p class="case-desc">遮るもののない高層階特有の強烈な西日対策。景色を楽しめるよう反射の少ないスモーク系遮熱フィルムを採用しました。</p>
+              <div class="case-action">
+                <span class="btn btn-sm btn-outline"><i class="fa-solid fa-magnifying-glass"></i> 詳細・価格を見る</span>
               </div>
             </div>
           </article>
@@ -152,61 +228,52 @@
       <div class="container">
         <div class="section-heading center reveal-on-scroll">
           <p class="section-label">PRICING</p>
-          <h2 class="section-title">明朗会計の『完全定額制』</h2>
-          <p>施工費・出張費・材料費・徹底養生・家具移動、すべて含まれた最終総額です。<br>面倒な平米計算や、後からの追加請求は一切ありません。</p>
+          <h2 class="section-title">明朗会計の『料金案内』</h2>
+          <p>チラシ掲載の安心価格。<br>※フィルムの種類は他にもございます。※価格は税抜表示となります。</p>
         </div>
-        <div class="pricing-grid">
+        <div class="pricing-grid m2-pricing">
           <article class="price-card reveal-on-scroll">
             <div class="price-header">
-              <h3>小窓サイズ</h3>
-              <p>トイレ・浴室など（0.5㎡未満目安）</p>
+              <h3>飛散防止フィルム</h3>
+              <p>台風対策・防犯対策に</p>
             </div>
             <div class="price-body">
-              <p class="price-value">定額コミコミ</p>
-              <p class="price-sub">詳細はお見積り</p>
-              <ul class="feature-list">
-                <li><i class="fa-solid fa-check"></i> トイレや小窓に最適</li>
-                <li><i class="fa-solid fa-check"></i> 防犯・目隠し用途に〇</li>
-                <li><i class="fa-solid fa-check"></i> 1枚からでも受付可能</li>
-              </ul>
+              <p class="price-value">¥10,000<span>/㎡〜</span></p>
+              <p class="price-sub">見積もり無料</p>
             </div>
           </article>
 
           <article class="price-card popular reveal-on-scroll" style="transition-delay: 100ms;">
-            <div class="popular-tag">人気No.1</div>
+            <div class="popular-tag">人気</div>
             <div class="price-header">
-              <h3>掃き出し窓サイズ</h3>
-              <p>床〜天井付近の大型窓（1.0〜2.0㎡目安）</p>
+              <h3>遮熱ミラーフィルム</h3>
+              <p>暑さ対策・プライバシー保護に</p>
             </div>
             <div class="price-body">
-              <p class="price-value">定額コミコミ</p>
-              <p class="price-sub">お問い合わせで即回答</p>
-              <ul class="feature-list">
-                <li><i class="fa-solid fa-check"></i> リビング・ベランダ窓に最適</li>
-                <li><i class="fa-solid fa-check"></i> 材料・施工・出張費込み</li>
-                <li><i class="fa-solid fa-check"></i> 徹底養生・家具移動0円</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="price-card reveal-on-scroll" style="transition-delay: 200ms;">
-            <div class="price-header">
-              <h3>腰高窓サイズ</h3>
-              <p>大人の腰の高さにある窓（0.5〜1.0㎡目安）</p>
-            </div>
-            <div class="price-body">
-              <p class="price-value">定額コミコミ</p>
-              <p class="price-sub">写真で簡単見積り</p>
-              <ul class="feature-list">
-                <li><i class="fa-solid fa-check"></i> 寝室・子供部屋に最適</li>
-                <li><i class="fa-solid fa-check"></i> 複数窓のまとめ割あり</li>
-                <li><i class="fa-solid fa-check"></i> LINEでまとめて相談OK</li>
-              </ul>
+              <p class="price-value">¥15,000<span>/㎡〜</span></p>
+              <p class="price-sub">見積もり無料</p>
             </div>
           </article>
         </div>
-        <p class="pricing-note reveal-on-scroll"><i class="fa-solid fa-circle-info"></i>
-          ※高所作業・特殊な足場が必要な場合や、既存フィルムの剥離作業がある場合は事前に確定金額をご提示します。</p>
+
+        <div class="pricing-guide reveal-on-scroll">
+          <div class="guide-box">
+            <h3><i class="fa-solid fa-ruler-combined"></i> 1㎡ってどれくらい？</h3>
+            <div class="guide-img-wrap">
+              <img src="img/size_guide_1m2_wide.png" alt="1㎡の目安図解" class="guide-img" loading="lazy">
+            </div>
+            <p>一般的な腰高窓（幅1m×高さ1m）で約1㎡です。<br>ご自宅の窓のサイズとお写真をお送りいただけば、すぐにお見積りいたします。</p>
+          </div>
+          <div class="guide-box highlight">
+            <h3><i class="fa-solid fa-map-location-dot"></i> 出張無料エリア</h3>
+            <div class="guide-img-wrap">
+              <img src="img/service_area_map.png" alt="出張無料エリアマップ" class="guide-img" loading="lazy">
+            </div>
+            <p class="strong-text">西宮から半径70km県内は出張費無料！</p>
+            <p class="area-list">対象エリア：大阪・兵庫・京都・奈良・和歌山・滋賀・三重・福井など</p>
+            <p class="area-note">※対象エリア外でも対応可能です。お気軽にご相談ください。<br>※高所や施工困難場所については別途追加料金が発生することがあります。</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -219,13 +286,7 @@
           <p>重いソファなどの家具移動も、こちらで無料・完全対応いたします。施工前の面倒なお片付けは不要です。</p>
 
           <ul class="quality-list">
-            <li>
-              <div class="q-icon"><i class="fa-solid fa-socks"></i></div>
-              <div class="q-text">
-                <h4>新品の靴下で訪問・完全非喫煙</h4>
-                <p>清潔感を第一に考え、お客様の家を汚しません。</p>
-              </div>
-            </li>
+
             <li>
               <div class="q-icon"><i class="fa-solid fa-couch"></i></div>
               <div class="q-text">
@@ -244,7 +305,7 @@
         </div>
         <div class="split-image reveal-on-scroll">
           <div class="image-card glow-shadow">
-            <img src="img/worker.png" alt="清潔で丁寧な施工風景" loading="lazy">
+            <img src="img/worker_illustration.png" alt="清潔で丁寧な施工風景" loading="lazy">
           </div>
         </div>
       </div>
@@ -253,32 +314,37 @@
     <!-- LINE CTA -->
     <section id="line-estimate" class="section cta-section">
       <div class="cta-bg-shape"></div>
-      <div class="container cta-container reveal-on-scroll">
-        <div class="cta-box">
-          <h2>面倒な電話や訪問は不要。<br>見積もりはスマホで5分で完結します。</h2>
-          <p class="cta-lead">匿名でのご相談OK。強引な営業は一切いたしません。</p>
+      <div class="container reveal-on-scroll">
+        <div class="cta-card">
+          <div class="cta-card-content">
+            <h2 class="cta-title">面倒な電話や訪問は不要。<br>見積もりは<span>スマホで5分</span>で完結。</h2>
+            <p class="cta-lead">匿名でのご相談OK。強引な営業は一切いたしません。</p>
 
-          <div class="step-process">
-            <div class="step">
-              <span class="step-num">STEP 1</span>
-              <p>スマホで窓を撮影</p>
+            <div class="step-process">
+              <div class="step">
+                <span class="step-num">STEP 1</span>
+                <p>スマホで窓を撮影</p>
+              </div>
+              <div class="step-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+              <div class="step">
+                <span class="step-num">STEP 2</span>
+                <p>サイズを入力</p>
+              </div>
+              <div class="step-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+              <div class="step">
+                <span class="step-num">STEP 3</span>
+                <p>LINEで総額回答</p>
+              </div>
             </div>
-            <div class="step-arrow"><i class="fa-solid fa-chevron-right"></i></div>
-            <div class="step">
-              <span class="step-num">STEP 2</span>
-              <p>大体のサイズと送信</p>
-            </div>
-            <div class="step-arrow"><i class="fa-solid fa-chevron-right"></i></div>
-            <div class="step">
-              <span class="step-num">STEP 3</span>
-              <p>即座にLINEで総額回答</p>
+
+            <a class="cta-btn" href="https://line.me/R/ti/p/@287hfqga"><i class="fab fa-line"></i> LINEで無料見積もり</a>
+            <br>
+            <div class="guarantee-badge">
+              <i class="fa-solid fa-award"></i> 圧倒的安心の【5年間無償保証】（剥がれ・浮き完全対応）
             </div>
           </div>
-
-          <a class="btn btn-primary btn-lg" href="#line_url"><i class="fab fa-line"></i> LINEで無料見積もり</a>
-          <br>
-          <div class="guarantee-badge mt-4">
-            <i class="fa-solid fa-award"></i> 圧倒的安心の【5年間無償保証】（剥がれ・浮き完全対応）
+          <div class="cta-card-visual">
+            <img src="img/cta_illustration.png" alt="スマホで簡単見積もりサポート" class="cta-character" loading="lazy">
           </div>
         </div>
       </div>
@@ -288,9 +354,14 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <span class="brand-mark"><i class="fa-solid fa-shield-halved"></i></span>
-        <span class="footer-title">窓フィルムプロフェッショナルズ</span>
-        <p class="footer-text">卓越した品質と、地域最安値クラスの圧倒的コストパフォーマンスで、お客様の快適な暮らしを実現します。</p>
+        <span class="footer-title">株式会社エムテック</span>
+        <p class="footer-text">他社に負けない低価格！関西を中心に広範囲対応！<br>窓フィルムのことなら私たちにご相談ください。</p>
+        <div class="footer-sns">
+          <a href="https://www.instagram.com/m__film_mtec?igsh=d3ZvMWN3ejh2aGI4" target="_blank" class="sns-link"><i
+              class="fa-brands fa-instagram"></i>
+            Instagram</a>
+          <a href="https://line.me/R/ti/p/@287hfqga" class="sns-link line"><i class="fa-brands fa-line"></i> 公式LINE</a>
+        </div>
       </div>
       <div class="footer-links">
         <a href="#hero-fv">TOPに戻る</a>
@@ -300,10 +371,176 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 Window Film Professionals. All rights reserved.</p>
+      <p>&copy; 2026 株式会社エムテック. All rights reserved.</p>
     </div>
   </footer>
 
+  <!-- Modal for Case Studies -->
+  <div id="case-modal" class="case-modal">
+    <div class="case-modal-overlay"></div>
+    <div class="case-modal-content">
+      <button class="case-modal-close"><i class="fa-solid fa-xmark"></i></button>
+
+      <!-- Swiper -->
+      <div class="swiper case-swiper">
+        <div class="swiper-wrapper">
+
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="modal-slide-inner">
+              <div class="modal-gallery">
+                <div class="gallery-item">
+                  <span class="ba-label before">BEFORE</span>
+                  <img src="img/case1.png" alt="施工前">
+                </div>
+                <div class="gallery-item">
+                  <span class="ba-label after">AFTER</span>
+                  <img src="img/case1.png" alt="施工後">
+                </div>
+              </div>
+              <div class="modal-info">
+                <h3>リビングの西日対策（ミラー調フィルム）</h3>
+                <p class="modal-desc">
+                  「西日が強すぎてリビングに居られない」というお悩みに対し、景観を損なわない薄めのハーフミラーフィルムを施工。室温上昇を大幅に抑えつつ、外からの視線もカットしています。</p>
+                <div class="modal-price">
+                  <span class="price-label">参考価格 (掃き出し窓2枚)</span>
+                  <span class="price-val">¥35,000<span>(税込・コミコミ)</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div class="modal-slide-inner">
+              <div class="modal-gallery">
+                <div class="gallery-item">
+                  <span class="ba-label before">BEFORE</span>
+                  <img src="img/case2.png" alt="施工前">
+                </div>
+                <div class="gallery-item">
+                  <span class="ba-label after">AFTER</span>
+                  <img src="img/case2.png" alt="施工後">
+                </div>
+              </div>
+              <div class="modal-info">
+                <h3>道路沿い窓のプライバシー強化（フロスト調）</h3>
+                <p class="modal-desc">
+                  歩行者の視線が気になる１階の窓。光を通しながら視線を完全に遮るフロスト（すりガラス調）フィルムを施工。自然光を部屋に取り込みながら、ブラインドなしでも安心して過ごせる空間に。</p>
+                <div class="modal-price">
+                  <span class="price-label">参考価格 (腰高窓2枚)</span>
+                  <span class="price-val">¥28,000<span>(税込・コミコミ)</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <div class="modal-slide-inner">
+              <div class="modal-gallery">
+                <div class="gallery-item">
+                  <span class="ba-label before">BEFORE</span>
+                  <img src="img/case1.png" alt="施工前">
+                </div>
+                <div class="gallery-item">
+                  <span class="ba-label after">AFTER</span>
+                  <img src="img/case1.png" alt="施工後">
+                </div>
+              </div>
+              <div class="modal-info">
+                <h3>吹き抜け窓の暑さ・UV対策</h3>
+                <p class="modal-desc">高所にある吹き抜け窓からの直射日光による床焼けと暑さを解決。透明度の高い遮熱フィルムで開放感を保ちながら熱をカットします。</p>
+                <div class="modal-price">
+                  <span class="price-label">参考価格 (FIX窓4枚 ※足場込み)</span>
+                  <span class="price-val">¥85,000<span>(税込・コミコミ)</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="swiper-slide">
+            <div class="modal-slide-inner">
+              <div class="modal-gallery">
+                <div class="gallery-item">
+                  <span class="ba-label before">BEFORE</span>
+                  <img src="img/case2.png" alt="施工前">
+                </div>
+                <div class="gallery-item">
+                  <span class="ba-label after">AFTER</span>
+                  <img src="img/case2.png" alt="施工後">
+                </div>
+              </div>
+              <div class="modal-info">
+                <h3>1階裏手窓の防犯強化</h3>
+                <p class="modal-desc">死角になりやすい裏手の窓に防犯フィルムを施工。ガラス破りを困難にし、空き巣の侵入リスクを大幅に低減。台風時の飛散防止にも役立ちます。</p>
+                <div class="modal-price">
+                  <span class="price-label">参考価格 (引き違い窓4枚)</span>
+                  <span class="price-val">¥65,000<span>(税込・コミコミ)</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="swiper-slide">
+            <div class="modal-slide-inner">
+              <div class="modal-gallery">
+                <div class="gallery-item">
+                  <span class="ba-label before">BEFORE</span>
+                  <img src="img/case1.png" alt="施工前">
+                </div>
+                <div class="gallery-item">
+                  <span class="ba-label after">AFTER</span>
+                  <img src="img/case1.png" alt="施工後">
+                </div>
+              </div>
+              <div class="modal-info">
+                <h3>浴室・脱衣所のシルエット対策</h3>
+                <p class="modal-desc">夜間、照明をつけると外からシルエットが見えてしまう浴室窓に、完全目隠しの乳白色フィルムを施工。水回りでも剥がれにくい専用施工を実施。</p>
+                <div class="modal-price">
+                  <span class="price-label">参考価格 (小窓2枚)</span>
+                  <span class="price-val">¥20,000<span>(税込・コミコミ)</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 6 -->
+          <div class="swiper-slide">
+            <div class="modal-slide-inner">
+              <div class="modal-gallery">
+                <div class="gallery-item">
+                  <span class="ba-label before">BEFORE</span>
+                  <img src="img/case2.png" alt="施工前">
+                </div>
+                <div class="gallery-item">
+                  <span class="ba-label after">AFTER</span>
+                  <img src="img/case2.png" alt="施工後">
+                </div>
+              </div>
+              <div class="modal-info">
+                <h3>マンション高層階のジリジリ感対策</h3>
+                <p class="modal-desc">遮るもののない高層階特有の強烈な西日対策。景色を楽しめるよう反射の少ないスモーク系遮熱フィルムを採用し、快適な窓際を実現しました。</p>
+                <div class="modal-price">
+                  <span class="price-label">参考価格 (大型掃き出し窓2枚)</span>
+                  <span class="price-val">¥48,000<span>(税込・コミコミ)</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- Add Pagination & Nav -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
