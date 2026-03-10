@@ -1,11 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const headerCtas = document.querySelectorAll('a[href="#line-estimate"]');
+  // Smooth scroll logic for header CTA
+  const headerCtas = document.querySelectorAll('a[href^="#"]');
 
   headerCtas.forEach((button) => {
     button.addEventListener('click', (event) => {
       const targetId = button.getAttribute('href');
+      if (targetId === '#') return;
+      
       const target = document.querySelector(targetId);
-
       if (!target) return;
 
       event.preventDefault();
@@ -13,7 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  const revealTargets = document.querySelectorAll('.price-card, .reason-card, .pain-list li, .guarantee-card, .card-illustration');
+  // Scroll detection for animations
+  const revealTargets = document.querySelectorAll('.reveal-on-scroll');
 
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver((entries) => {
@@ -23,11 +26,15 @@ document.addEventListener('DOMContentLoaded', () => {
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.18 });
+    }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
 
     revealTargets.forEach((element) => {
-      element.classList.add('reveal-on-scroll');
       observer.observe(element);
+    });
+  } else {
+    // Fallback for older browsers
+    revealTargets.forEach((element) => {
+      element.classList.add('is-visible');
     });
   }
 });
