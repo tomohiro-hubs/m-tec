@@ -1421,6 +1421,7 @@ ul {
       font-size: 0.8rem;
       padding: 8px 10px;
     }
+
     .brand-title {
       font-size: 0.9rem;
     }
@@ -1517,6 +1518,12 @@ ul {
   .cta-btn {
     padding: 16px 20px;
     font-size: 1.1rem;
+  }
+
+  .cta-title span,
+  .section-title span,
+  .hero-content h2 span {
+    white-space: normal;
   }
 
   .footer-inner {
