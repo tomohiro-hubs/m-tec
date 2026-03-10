@@ -1411,6 +1411,21 @@ ul {
     font-size: 0.85rem;
   }
 
+  .header-cta {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 375px) {
+    .header-cta {
+      font-size: 0.8rem;
+      padding: 8px 10px;
+    }
+    .brand-title {
+      font-size: 0.9rem;
+    }
+  }
+
   .hero-section {
     padding: 100px 0 60px;
     /* Increased spacing for mobile */
