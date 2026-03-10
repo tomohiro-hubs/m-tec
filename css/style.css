@@ -165,16 +165,10 @@ ul {
   gap: 16px;
 }
 
-.brand-mark {
-  width: 44px;
-  height: 44px;
-  background: linear-gradient(135deg, var(--c-primary-light), var(--c-primary));
-  border-radius: 12px;
-  color: white;
-  display: grid;
-  place-items: center;
-  font-size: 1.25rem;
-  box-shadow: var(--shadow-md);
+.brand-logo {
+  height: 50px;
+  width: auto;
+  flex-shrink: 0;
 }
 
 .brand-sub {
@@ -1304,11 +1298,11 @@ ul {
   margin-bottom: 60px;
 }
 
-.footer-brand .brand-mark {
-  background: white;
-  color: var(--c-primary-dark);
-  display: inline-grid;
-  margin-bottom: 16px;
+.footer-logo {
+  height: 60px;
+  width: auto;
+  margin-bottom: 20px;
+  display: block;
 }
 
 .footer-title {
@@ -1402,6 +1396,10 @@ ul {
 
   .brand-title {
     font-size: 1rem;
+  }
+
+  .brand-logo {
+    height: 36px;
   }
 
   .brand-sub {
