@@ -1604,6 +1604,16 @@ ul {
   background: rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 768px) {
+  .case-modal-close {
+    top: 8px;
+    right: 8px;
+    width: 32px;
+    height: 32px;
+    font-size: 1.2rem;
+  }
+}
+
 .case-swiper {
   width: 100%;
 }
@@ -1668,10 +1678,27 @@ ul {
   background: var(--c-accent);
 }
 
+@media (max-width: 768px) {
+  .ba-label {
+    top: 8px;
+    left: 8px;
+    padding: 2px 8px;
+    font-size: 0.7rem;
+  }
+}
+
 .modal-info h3 {
   font-size: 1.5rem;
   color: var(--c-primary-dark);
   margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .modal-info h3 {
+    font-size: 1.2rem;
+    padding: 0 40px; /* Avoid overlap with swiper buttons */
+    text-align: center;
+  }
 }
 
 .modal-desc {
@@ -1725,6 +1752,26 @@ ul {
 .swiper-button-prev::after {
   font-size: 1.2rem !important;
   font-weight: 900;
+}
+
+@media (max-width: 768px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 36px !important;
+    height: 36px !important;
+    top: auto !important;
+    bottom: 10px !important;
+    transform: none !important;
+    z-index: 100 !important;
+  }
+  
+  .swiper-button-prev {
+    left: 20px !important;
+  }
+  
+  .swiper-button-next {
+    right: 20px !important;
+  }
 }
 
 .swiper-pagination-bullet-active {

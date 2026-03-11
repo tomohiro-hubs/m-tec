@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     button.addEventListener('click', (event) => {
       const targetId = button.getAttribute('href');
       if (targetId === '#') return;
-      
+
       const target = document.querySelector(targetId);
       if (!target) return;
 
@@ -37,4 +37,71 @@ document.addEventListener('DOMContentLoaded', () => {
       element.classList.add('is-visible');
     });
   }
+
+  // --- Case Studies Modal & Swiper Logic ---
+  const caseModal = document.getElementById('case-modal');
+  const caseModalOverlay = document.querySelector('.case-modal-overlay');
+  const caseModalClose = document.querySelector('.case-modal-close');
+  const caseCards = document.querySelectorAll('.case-card');
+
+  // Initialize Swiper
+  let caseSwiper;
+  if (typeof Swiper !== 'undefined') {
+    caseSwiper = new Swiper('.case-swiper', {
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      grabCursor: true, // Show grab cursor for swipe
+    });
+  }
+
+  // Open Modal function
+  const openModal = (index) => {
+    if (caseModal) {
+      caseModal.classList.add('is-active');
+      document.body.style.overflow = 'hidden'; // Prevent background scroll
+      if (caseSwiper) {
+        // Swiper uses real indexes, add slider init logic
+        caseSwiper.slideToLoop(index, 0); // instantly jump to current slide
+      }
+    }
+  };
+
+  // Close Modal function
+  const closeModal = () => {
+    if (caseModal) {
+      caseModal.classList.remove('is-active');
+      document.body.style.overflow = '';
+    }
+  };
+
+  // Attach click events to cards
+  caseCards.forEach((card) => {
+    card.addEventListener('click', () => {
+      const index = parseInt(card.getAttribute('data-index'), 10);
+      openModal(index);
+    });
+  });
+
+  // Attach close events
+  if (caseModalClose) {
+    caseModalClose.addEventListener('click', closeModal);
+  }
+  if (caseModalOverlay) {
+    caseModalOverlay.addEventListener('click', closeModal);
+  }
+
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && caseModal.classList.contains('is-active')) {
+      closeModal();
+    }
+  });
+
 });
